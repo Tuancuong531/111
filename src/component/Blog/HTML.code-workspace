@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../HTML"
+		},
+		{
+			"path": "../../../../../laragon/laragon/www"
+		},
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../Smart-Dressing-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "www"
+	}
+}
