@@ -147,8 +147,8 @@ import EditPro from "./EditPro";
                   <form onSubmit={handleForm} action="#"  encType="multipart/form-data">
                      <input type="text" placeholder="Name" name="name" onChange={handleInput}  />
                      <input type="number" placeholder="Price" name="price" onChange={handleInput}  />
-                     <select   name="category" onChange={handleInput} >
-                        <option value="">Please Choose Category</option>
+                     <select  name="category" onChange={handleInput} >
+                        <option >Please Choose Category</option>
                         {category.map((c) => (
                         <option  value={c.id}>{c.category}</option>
                         ))}                     

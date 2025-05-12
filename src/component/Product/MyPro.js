@@ -5,7 +5,7 @@ import EditPro from "./EditPro";
 
 function MyPro(props){
   
-    const [data, setData] = useState({})
+    const [data, setData] = useState([])
     const accessToken = localStorage.getItem("token");
     //config de gui token qua API
     let config = { 
@@ -50,14 +50,7 @@ function MyPro(props){
         })
             .catch(err => console.log(err));
       }  
-      function Edit(){
-        API1.post(`user/product/${id_pro}`, config)
-        .then(res => {
-          console.log(res);
-          // setData(res.data.data);
-        })
-            .catch(err => console.log(err));
-      }
+      
         return(
           <tr>
 

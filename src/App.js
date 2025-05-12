@@ -6,7 +6,6 @@ import Footer from './component/Layout/Footer';
 import { Component } from 'react';
 import { useLocation } from 'react-router-dom';
 import MenuleftAcc from './component/Layout/MenuleftAcc';
-
 function App(props) {
   let params1 = useLocation();
   console.log(params1)

@@ -44,6 +44,7 @@ function Update() {
         let reader = new FileReader();
         reader.onload = (e) => {
             setAva(e.target.result); 
+            
         };
         reader.readAsDataURL(file[0]);
     }
@@ -107,6 +108,7 @@ function Update() {
                 API1.post(`user/update/${user.id}`, formData, config)
                 .then(res=>{
                 console.log(res)
+                alert("Update Profile Success")
                 var dataNew = JSON.stringify(res.data.Auth)
                 localStorage.setItem("data",dataNew)
                 localStorage.setItem("token",res.data.token)
